@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digimon API.">
+    <title>Digimon API Webpage</title>
+    <!-- Bootstrap 5 CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://digimon-api.vercel.app/api/digimon">
+</head>
+
+<body>
+    <header></header>
+    <hr>
+    <div class="nav" id="nav">
+        <div class="show">
+            <label for="select" class="label">Show:</label>
+            <select name="select" class="select" id="select">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="all" selected>All</option>
+            </select>
+        </div>
+        <div class="sort-buttons">
+            <button id="sort-name-btn">Name <i class="fas fa-sort" aria-hidden="true"></i></button>
+            <button id="sort-level-btn">Level <i class="fas fa-sort" aria-hidden="true"></i></button>
+            <button id="sort-none-btn">None</button>
+        </div>
+        <div class="search">
+            <input class="search-input" type="text" id="search-input" placeholder='Busca Digimons ...'>
+            <button class="search-btn fas fa-magnifying-glass" aria-hidden="true" id="search-btn"></button>
+        </div>
+    </div>
+    <hr>
+    <div class="pagination" id="pagination-top"></div>
+    <div class="digimon-list" id="digimon-list"></div>
+    <div class="pagination" id="pagination-bot"></div>
+    
+    <div class="floating-buttons">
+        <i class="fas fa-long-arrow-up" aria-hidden="true" id="top-btn"></i>
+        <i class="fas fa-long-arrow-down" aria-hidden="true" id="bot-btn"></i>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script> <!-- Custom JavaScript file -->
+    <script src="assets/js/script.js"></script>
+</body>
